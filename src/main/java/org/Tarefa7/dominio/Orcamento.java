@@ -16,8 +16,8 @@ public class Orcamento {
     private int diasUteisParaEntrega;
 
     public Orcamento(long id, LocalDateTime data, Cidade cidadeOrigem, Cidade cidadeDestino, double peso,
-            double custoBasico, double custoAdicional, double impostos, double desconto, double valorFinal,
-            int diasUteisParaEntrega) {
+                     double custoBasico, double custoAdicional, double impostos, double desconto, double valorFinal,
+                     int diasUteisParaEntrega) {
         this.id = id;
         this.data = data;
         this.cidadeOrigem = cidadeOrigem;
@@ -31,7 +31,7 @@ public class Orcamento {
         this.diasUteisParaEntrega = diasUteisParaEntrega;
     }
 
-    public Orcamento(){
+    public Orcamento() {
 
     }
 
@@ -115,11 +115,11 @@ public class Orcamento {
         this.valorFinal = valorFinal;
     }
 
-    public int getDiasUteisParaEntrega(){
+    public int getDiasUteisParaEntrega() {
         return diasUteisParaEntrega;
     }
 
-    public void setDiasUteisParaEntrega(int diasUteisParaEntrega){
+    public void setDiasUteisParaEntrega(int diasUteisParaEntrega) {
         this.diasUteisParaEntrega = diasUteisParaEntrega;
     }
 
@@ -127,7 +127,7 @@ public class Orcamento {
     public String toString() {
         return "Orcamento [id=" + id + ", data=" + data + ", cidadeOrigem=" + cidadeOrigem + ", cidadeDestino="
                 + cidadeDestino + ", peso=" + peso + ", custoBasico=" + custoBasico + ", custoAdicional="
-                + custoAdicional + ", impostos=" + impostos + ", desconto=" + desconto + ", valorFinal=" + valorFinal 
+                + custoAdicional + ", impostos=" + impostos + ", desconto=" + desconto + ", valorFinal=" + valorFinal
                 + ", diasUteisParaEntrega=" + diasUteisParaEntrega + "]";
     }
 }

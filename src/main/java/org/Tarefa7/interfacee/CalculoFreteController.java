@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-
 @RestController
 @RequestMapping("/calculoFrete")
 public class CalculoFreteController {
@@ -36,7 +35,7 @@ public class CalculoFreteController {
     @GetMapping("/cidadesAtendidas")
     @CrossOrigin(origins = "*")
     public ResponseEntity<List<String>> consultaCidadesAtendidas() {
-        List<String> cidades = repositorioDeCidades.todas().stream().map(c->c.getNome()).toList();
+        List<String> cidades = repositorioDeCidades.todas().stream().map(c -> c.getNome()).toList();
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(cidades);
@@ -71,7 +70,7 @@ public class CalculoFreteController {
                         .body("invalido");
             }
             var cidade = consulta.getLocalidade();
-            if (repositorioDeCidades.todas().stream().anyMatch(cidade1 -> cidade1.getNome().equals(cidade))){
+            if (repositorioDeCidades.todas().stream().anyMatch(cidade1 -> cidade1.getNome().equals(cidade))) {
                 return ResponseEntity
                         .status(HttpStatus.OK)
                         .body(cidade);

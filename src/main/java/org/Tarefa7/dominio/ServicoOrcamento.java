@@ -18,7 +18,7 @@ public class ServicoOrcamento {
 
     @Autowired
     public ServicoOrcamento(ServicoCEP servicoCEP, RepositorioDeCidadesMem repositorioDeCidades,
-            RepositorioDeOrcamentos repositorioDeOrcamentos) {
+                            RepositorioDeOrcamentos repositorioDeOrcamentos) {
         this.servicoCEP = servicoCEP;
         this.repositorioDeCidades = repositorioDeCidades;
         this.repositorioDeOrcamentos = repositorioDeOrcamentos;
